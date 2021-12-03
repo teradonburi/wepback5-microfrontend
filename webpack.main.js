@@ -22,7 +22,7 @@ module.exports = {
     publicPath: 'auto', // ホスティングするフォルダ
   },
   resolve: {
-    modules: ['node_modules', 'header_app'],
+    modules: ['node_modules'],
     extensions: ['.js', '.ts', '.tsx'],
   },
   module: {

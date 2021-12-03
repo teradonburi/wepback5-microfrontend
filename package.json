@@ -6,9 +6,12 @@
   "author": "teradonburi <daikiterai@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "run-p header main type-check",
-    "header": "webpack serve --config ./webpack.header.js",
-    "main": "webpack serve --config ./webpack.main.js",
+    "dev": "run-p dev:* type-check",
+    "dev:header": "webpack serve --config ./webpack.header.js",
+    "dev:main": "webpack serve --config ./webpack.main.js",
+    "build": "run-p build:* type-check",
+    "build:header": "webpack --config ./webpack.header.js",
+    "build:main": "webpack --config ./webpack.main.js",
     "type-check": "tsc -w --project ./tsconfig.json",
     "lint": "eslint . --ext .ts,.tsx"
   },
