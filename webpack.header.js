@@ -55,6 +55,7 @@ module.exports = {
     ],
   },
   plugins: [
+    // TODO: production時は含めない
     new HtmlWebpackPlugin({
       template: './public/index.html',
       inject: 'body',
