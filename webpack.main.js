@@ -63,6 +63,7 @@ module.exports = {
       name: 'main_app',
       filename: 'main.js',
       remotes: {
+        // TODO: production時はpathを変える
         header_app: 'header_app@http://localhost:3002/header.js',
       },
       shared: {
