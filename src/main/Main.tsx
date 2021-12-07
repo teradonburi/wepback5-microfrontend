@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <div>
       <Header />
-      アプリ
+      <div style={{ fontSize: 18, fontWeight: 'bold'}}>本体アプリ</div>
     </div>
   )
 }
