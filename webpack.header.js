@@ -48,15 +48,15 @@ module.exports = (env) => {
       'core-js/modules/es.array.iterator', // IEでArrayのiteratorを使えるようにする
       './src/header/index.tsx',
     ],
-    devServer: {
-      port: 3002,
-    },
-    devtool: 'inline-cheap-module-source-map', // ソースマップを出力するための設定、ソースマップファイル（.map）が存在する場合、ビルド前のソースファイルでデバッグができる
     output: {
       path: path.resolve(__dirname, 'dist'), // 出力するフォルダ名(dist)
       filename: 'bundle-header.js', // 出力するメインファイル名
       publicPath: 'auto', // ホスティングするフォルダ
     },
+    devServer: {
+      port: 3002,
+    },
+    devtool: 'inline-cheap-module-source-map', // ソースマップを出力するための設定、ソースマップファイル（.map）が存在する場合、ビルド前のソースファイルでデバッグができる
     resolve: {
       modules: ['node_modules'],
       extensions: ['.js', '.ts', '.tsx'],
